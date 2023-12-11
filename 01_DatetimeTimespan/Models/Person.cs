@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _01_DatetimeTimespan.Models
 {
@@ -10,7 +7,6 @@ namespace _01_DatetimeTimespan.Models
     {
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
-
         public Person(string name, DateTime birthDate)
         {
             this.Name = name;
@@ -36,23 +32,21 @@ namespace _01_DatetimeTimespan.Models
 
             return personList;
         }
-
         public static void ChoosePerson()
         {
-            Console.WriteLine($"Kiez een persoon: \n0: \t{Person.EveryPerson()[0].Name} " +
-                $"\n1: \t{Person.EveryPerson()[1].Name} " +
-                $"\n2: \t{Person.EveryPerson()[2].Name} " +
-                $"\n3: \t{Person.EveryPerson()[3].Name} " +
-                $"\n4: \t{Person.EveryPerson()[4].Name} " +
-                $"\n5: \t{Person.EveryPerson()[5].Name} ");
+            Console.WriteLine("Kiez een persoon: ");
+            for (int i = 0; i < Person.EveryPerson().Count; i++)
+            {
+                Console.WriteLine($"{i}: \t{Person.EveryPerson()[i].Name}");
+            }
 
             string userChoiceInput = Console.ReadLine();
-            int userChoiceOutput;
-            if (int.TryParse(userChoiceInput, out userChoiceOutput) && userChoiceOutput <= Person.EveryPerson().Count)
+
+            if (int.TryParse(userChoiceInput, out int userChoiceOutput) && userChoiceOutput <= Person.EveryPerson().Count)
             {
-                Console.Clear();
-                Console.WriteLine($"{Person.EveryPerson()[userChoiceOutput].Name} gekozen");
-                CalculateDaysDiff(userChoiceOutput);
+                Console.Clear(); 
+                Console.WriteLine($"{Person.EveryPerson()[userChoiceOutput].Name} gekozen.");
+                CalculateDaysDifference(userChoiceOutput);
             }
             else
             {
@@ -60,7 +54,7 @@ namespace _01_DatetimeTimespan.Models
                 Console.WriteLine("Ongeldige invoer...");
             }
         }
-        private static void CalculateDaysDiff(int userChoiceOutput)
+        private static void CalculateDaysDifference(int userChoiceOutput)
         {
             for (int i = 0; i < Person.EveryPerson().Count; i++)
             {
@@ -78,7 +72,6 @@ namespace _01_DatetimeTimespan.Models
                     else
                     {
                         Console.WriteLine($"{Person.EveryPerson()[userChoiceOutput].Name} is {diffDate} dagen jonger dan {Person.EveryPerson()[i].Name}.");
-
                     }
                 }
             }
@@ -88,5 +81,7 @@ namespace _01_DatetimeTimespan.Models
         {
             return $"{this.Name} - {this.BirthDate}";
         }
-    }
+        }
 }
+
+

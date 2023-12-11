@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_DatetimeTimespan", "01_D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dummy", "Dummy\Dummy.csproj", "{B446720E-C58B-4676-99CB-474F8F8982C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Kansberekening", "04_Kansberekening\04_Kansberekening.csproj", "{F10566D6-4709-451A-A8DD-019192CD52C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B446720E-C58B-4676-99CB-474F8F8982C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B446720E-C58B-4676-99CB-474F8F8982C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B446720E-C58B-4676-99CB-474F8F8982C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F10566D6-4709-451A-A8DD-019192CD52C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F10566D6-4709-451A-A8DD-019192CD52C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F10566D6-4709-451A-A8DD-019192CD52C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F10566D6-4709-451A-A8DD-019192CD52C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

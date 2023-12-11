@@ -1,0 +1,21 @@
+﻿Oefening kansberekeningen
+We veronderstellen een zak met 100 knikkers, een van deze knikkers is rood. Schrijf een applicatie
+die berekent wat de kans is de rode knikker te pakken binnen een bepaald aantal pogingen. We
+gaan er uiteraard van uit dat de persoon die de knikkers pakt op voorhand niet kan weten welke
+kleur de knikker heeft.
+
+Zonder teruglegging
+De eerste keer doe je dit “zonder teruglegging”: een knikker die genomen wordt, wordt niet terug in
+de zak geworpen bij een volgende poging. Dit maakt dat bij 100 pogingen er een kans is van 100% dat
+de knikker gevonden wordt.
+
+Met teruglegging
+Als we ervan uitgaan dat een knikker die genomen is terug in de zak wordt geworpen vooraleer een
+nieuwe poging begint dan wordt de oefening een stuk complexer. Denk er maar eens over na: 100
+pogingen geeft niet 100% kans om de rode knikker te vinden. Overleg met je medestudenten of ga
+online op zoek om de logica hiervan te achterhalen. De kans ligt rond de 63% bij 100 pogingen:
+Terminal:		-------------------------------------------------------------------------
+		        | >Geef een aantaal popingen                                            |
+		        | 100                                                                   |
+		        | >De kans dat de rode bal gevonden wordt met 100 popingen is 63.40%    |
+		        -------------------------------------------------------------------------
